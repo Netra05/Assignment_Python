@@ -5,9 +5,9 @@ class DBConnector:
     def get_connection():
         try:
             conn = pyodbc.connect(
-                "DRIVER={ODBC Driver 17 for SQL Server};"
-                "SERVER=LAPTOP-A3LRA9TF;"
-                "DATABASE=TechShop;"
+                "DRIVER={Your server name};"
+                "SERVER={your server name};"
+                "DATABASE={your db name};"
                 "Trusted_Connection=yes;"
             )
             return conn
